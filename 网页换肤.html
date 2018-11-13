@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/good.css">
+</head>
+<body>
+            <div class="hfD">
+                <header class="hfHeader">
+                    <p class="hfHeaderP">主题中心</p>
+                </header>
+                <nav  class="hfNav">
+                    <img class="hfNavI" src="static/img/hf1.png">
+                    <div class="hfNavD">
+                    <p class="hfNavP">主题中心</p>
+                        <span class="hfNavS">主题</span>丨<span class="hfNavA">颜色</span>
+                    </div>
+                    <img class="hfNavI1" src="static/img/hf2.png">
+                </nav>
+                <section class="hfSection">
+                    <div class="hfSectionD"></div>
+                </section>
+            </div>
+</body>
+</html>
+<script type="text/javascript">
+
+        // console.log(document.querySelector(".hfNavS"))
+        // document.querySelector(".hfNavS").onmouseover=function () {
+        //       document.querySelector(".hfNavS").id="addXx"
+        // };
+        // document.querySelector(".hfNavA").onmouseover=function () {
+        //   document.querySelector(".hfNavA").id="addYy"
+        // }
+        // document.querySelector(".hfNavS").onmouseout = function(){
+        //   document.querySelector(".hfNavS").removeClassName="addXx"
+        //
+        // }
+        //
+        //     document.querySelector(".hfNavA").onmouseout = function(){
+        //       document.querySelector(".hfNavA").removeClassName="addYy"
+        // }
+        // console.log(document.querySelector(".hfNavS"))
+        // document.querySelector(".hfNavS").onmouseover=function () {
+        //   if (document.querySelector(".hfNavS").style.color == "#5bc1fb") {
+        //     return
+        //   } else {
+        //     document.querySelector(".hfNavS").style.color == "#5bc1fb"
+        //   }
+        //   // document.querySelector(".hfNavA").onmouseout = function () {
+        //   //   this.style.color = 'black';
+        //   // }
+        // }
+        //
+
+        window.onload=function () {
+          document.querySelector(".hfNavS").onclick=function(){
+            document.querySelector(".hfNavS").style.color="#5bc1fb";
+            document.querySelector(".hfNavA").style.color="black";
+            //     document.querySelector(".hfNavS").onmouseout=function(){
+            //         document.querySelector(".hfNavS").style.color = "#5bc1fb";
+            // }
+            document.querySelector(".hfNavI1").style.left=81+"px";
+          };
+          document.querySelector(".hfNavA").onclick=function(){
+            document.querySelector(".hfNavA").style.color="#5bc1fb";
+            document.querySelector(".hfNavS").style.color="black";
+            // document.querySelector(".hfNavA").onmouseout=function(){
+            //     document.querySelector(".hfNavA").style.color = "#5bc1fb";
+            // }
+            document.querySelector(".hfNavI1").style.left=120+"px";
+          };
+          document.querySelector(".hfNavS").style.color = "black"
+          document.querySelector(".hfNavA").style.color = "#5bc1fb"
+          console.log(document.querySelector(".hfNavS").style.color)
+          if (document.querySelector(".hfNavS").style.color == "black") {
+            document.querySelector(".hfNavS").onmouseover=function () {
+              document.querySelector(".hfNavS").style.color ="#5bc1fb"
+            }
+            document.querySelector(".hfNavS").onmouseout=function () {
+              document.querySelector(".hfNavS").style.color ="black"
+            }
+          }
+          if (document.querySelector(".hfNavA").style.color == "black") {
+            document.querySelector(".hfNavA").onmouseover=function () {
+              document.querySelector(".hfNavA").style.color ="#5bc1fb"
+            }
+            document.querySelector(".hfNavA").onmouseout=function () {
+              document.querySelector(".hfNavA").style.color ="black"
+            }
+          }
+        }
+
+          // document.querySelector(".hfNavA").onmouseout = function () {
+          //   this.style.color = 'black';
+          // }
+
+
+        // document.querySelector(".hfNavA").onmouseover=function () {
+        //   if(document.querySelector(".hfNavA").style.color == "#5bc1fb") {
+        //     return
+        //   } else {
+        //     document.querySelector(".hfNavA").style.color == "#5bc1fb"
+        //   }
+          // document.querySelector(".hfNavA").onmouseout = function () {
+          //   this.style.color = 'black';
+          // }
+
+
+        // document.querySelector(".hfNavA").onmouseover=function () {
+        //   document.querySelector(".hfNavA").id="addYy"
+        // }
+        // document.querySelector(".hfNavS").onmouseout = function(){
+        //   document.querySelector(".hfNavS").removeClassName="addXx"
+        //
+        // }
+        //
+        //     document.querySelector(".hfNavA").onmouseout = function(){
+        //       document.querySelector(".hfNavA").removeClassName="addYy"
+        // }
+    // function outS() {
+    //   document.querySelector(".hfNavS").style.color="black"
+    // }
+    //     function outA() {
+    //       document.querySelector(".hfNavA").style.color="black"
+    //     }
+</script>
